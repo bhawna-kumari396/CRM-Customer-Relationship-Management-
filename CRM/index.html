@@ -16,9 +16,18 @@
     <!--navbar section-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-warning bg-dark fs-2 font-monospace" href="#">CRM</a>
+        <!--offcanvas Trigger-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+        </button>
+
+
+        <!--offcanvas Trigger ends-->
+        <a class="navbar-brand fw-bold text-warning bg-dark me-auto
+        " href="#">CRM</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler me-4"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -26,12 +35,13 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         ></button>
-          <span class="navbar-toggler-icon"></span>
+          
+
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-          <form class="d-flex">
-            <div class="input-group">
+          
+          <form class="d-flex ms-auto">
+            <div class="input-group my-3 my-lg-0">
               <input
                 type="text"
                 class="form-control"
@@ -48,6 +58,7 @@
               </button>
             </div>
           </form>
+          <ul class="navbar-nav  mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -68,10 +79,82 @@
               </li>
             </ul>
           </li>
+          </ul>
         </div>
       </div>
     </nav>
     <!--navbar end-->
+
+    <!--offcanvas-->
+
+    
+      
+      <div class="offcanvas offcanvas-start bg-dark text-warning sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        
+        <div class="offcanvas-body p-0">
+          <nav class="navbar-dark">
+            <ul class="navbar-nav">
+              <li>
+
+                <Div class="text-muted small fw-bold text-uppercase px-3 py-2">
+                  Section-1
+                </Div>
+
+
+              </li>
+              <li>
+                <a href="#" class="nav-link px-3 active">
+                  <span class="me-2">
+                    <i class="bi bi-speedometer2"></i></span>
+                  <span>DashBoard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-3 active">
+                  <span class="me-2">
+                    <i class="bi bi-house-fill"></i></span>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="my-2">
+                <hr class="dropdown-divider">
+
+              </li>
+
+              <li>
+
+                <Div class="text-muted small fw-bold text-uppercase px-3 py-2">
+                  Section-2
+                </Div>
+
+
+              </li>
+
+              <li>
+                <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <span class="me-2">
+                    <i class="bi bi-person-lines-fill"></i></span>
+                  <span>Contacts</span>
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="my-2">
+                <hr class="dropdown-divider">
+
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+      </div>
+
+    <!--offcanvas ends-->
     <script src="./css/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./css/bootstrap-5.0.2-dist/js/script.js"></script>
   </body>
